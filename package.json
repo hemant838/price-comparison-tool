@@ -1,27 +1,68 @@
 {
   "name": "price-comparison-tool",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "A comprehensive, AI-powered price comparison tool that searches for products across multiple e-commerce websites worldwide",
+  "author": "Global Price Comparison Team",
+  "license": "MIT",
+  "keywords": [
+    "price-comparison",
+    "e-commerce",
+    "web-scraping",
+    "nextjs",
+    "typescript",
+    "ai-powered",
+    "global-shopping"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/price-comparison-tool.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/price-comparison-tool/issues"
+  },
+  "homepage": "https://github.com/yourusername/price-comparison-tool#readme",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "type-check": "tsc --noEmit",
+    "test": "echo \"Tests coming soon\" && exit 0",
+    "test:watch": "echo \"Test watch mode coming soon\" && exit 0",
+    "test:coverage": "echo \"Test coverage coming soon\" && exit 0",
+    "docker:build": "docker build -t price-comparison-tool .",
+    "docker:run": "docker run -p 3000:3000 price-comparison-tool",
+    "clean": "rm -rf .next out dist",
+    "analyze": "ANALYZE=true npm run build"
   },
   "dependencies": {
+    "@radix-ui/react-select": "^2.2.5",
+    "@radix-ui/react-slot": "^1.2.3",
+    "@types/cheerio": "^0.22.35",
+    "axios": "^1.10.0",
+    "cheerio": "^1.1.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.525.0",
+    "next": "15.3.5",
+    "openai": "^5.8.2",
+    "puppeteer": "^24.12.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.5"
+    "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.3.5",
-    "@eslint/eslintrc": "^3"
+    "tailwindcss": "^4",
+    "tw-animate-css": "^1.3.5",
+    "typescript": "^5"
   }
 }
